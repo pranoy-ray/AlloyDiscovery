@@ -2,6 +2,8 @@
 
 This repository contains the codebase for the framework presented in the paper **"Universal electronic manifolds for extrapolative alloy discovery"**. It utilizes non-interacting pseudo-electron densities as structural descriptors for high-throughput High-Entropy Alloy (HEA) screening.
 
+Please cite the paper if you use this code. Please access the paper at: https://doi.org/10.48550/arXiv.2603.06953
+
 ## Directory Structure
 - `alloy_discovery/`: Main python package.
   - `feature_engineering.py`: Processes pseudo-densities and computes 2-Point Spatial Correlations (2PS).
