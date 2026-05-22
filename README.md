@@ -1,4 +1,4 @@
-# Alloy Discovery
+# Active Learning for accelerated Alloy Discovery using DFT
 
 This repository contains the codebase for the framework presented in the paper **"Electronic manifolds for extrapolative alloy discovery"**. It utilizes non-interacting pseudo-electron densities as structural descriptors for high-throughput High-Entropy Alloy (HEA) screening.
 
