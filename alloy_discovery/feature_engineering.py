@@ -1,5 +1,11 @@
 """
-Auto-generated module from Jupyter Notebook
+feature_engineering.py
+Pranoy — pseudopotential parsing, real-space grid setup, pseudocharge density
+and atomic density initialisation for SPARC-style DFT inputs.
+
+No changes required relative to the reviewer response: this module supplies
+raw density features (two-point statistics) only and contains no ML classes
+or error metrics.
 """
 
 import sys
@@ -521,8 +527,7 @@ def read_and_store_info(S, fname):
         # Atm_typ = S['Atm'][ityp]
         # Z_atom = Atm_typ['Zatom']
 
-        # 2. Call the core pseudopotential reading function (the one you provided)
-        # Note: We must pass the correct arguments: S, ityp (index), and psdfname (string).
+        # 2. Call the core pseudopotential reading function 
         S = readPseudopot(S, ityp, psdfname)
 
         current_index += count
@@ -1287,4 +1292,3 @@ for fname in os.listdir(os.path.join(HOMED, 'RHEA4latt')): #RHEA4POSCAR
 print(len(os.listdir(os.path.join(HOMED,'RelaxLatt2PS'))))
 # integral_rho = np.dot(S['W'], rho)
 # print(f'Integral rho after scaling: {integral_rho}')
-
